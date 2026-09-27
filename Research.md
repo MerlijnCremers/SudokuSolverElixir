@@ -22,7 +22,7 @@ Elixir is een functionele programmeertaal met een aantal interessante eigenschap
 Het meest interessante voor mij was toch wel de stijl van schrijven. Kort samengevat gaat het vooral om **wat er moet gebeuren**, in plaats van stap voor stap te beschrijven **hoe** het moet gebeuren.
 
 ### Functions
-Functies schrijf je net wat anders in elixir, je gerbuikt geen haakjes maar `do` en `end`
+Functies schrijf je net wat anders in elixir, je gebuikt geen haakjes maar `do` en `end`
 ```
 defmodule Greeter do
 def hello(name) do
@@ -39,18 +39,19 @@ Ook zijn er **anonieme functies** met `fn`
 code voorbeeld komt nog
 ```
 
- oftewel functies zonder naam.
+Oftewel functies zonder naam.
 
 ### Pattern Matching
 
 ### Pipe Operator
  Zo is er ook de interessante `|>` pipe-functie 
  
+Een voorbeeld van elixirschool.com
 ```
-code voorbeeld
+"Elixir rocks" |> String.upcase() |> String.split()
+["ELIXIR", "ROCKS"]
 ```
 Hiermee geef je de ene functie direct als input aan de volgende.
-
 
 ### Recursion
 Recursie gaat 100% een belangrijk deel zijn van deze challenge, ik heb namelijk geen for of while loops, dus recursie moet voor mij de for loop worden.
@@ -68,7 +69,7 @@ defmodule MyList do
 end
 ```
 
-of (snel even zelf geschreven),
+Of (snel even zelf geschreven),
 
 ```
 def countdown(0) do
@@ -86,9 +87,7 @@ end
 Booleans zijn ook een tikje anders. Het zijn namelijk eigenlijk waarden van het datatype **atom**. De waarde van een atom is zijn naam, bijvoorbeeld `:true` of `:false`.
 
 Bij booleans heb je ook de operators `and`, `or` en `not`. Deze werken vergelijkbaar met `&&` of `||`, maar lezen wat makkelijker.
-```
-algemeen code vorobeeld voor booleans op een plek makkelijker
-```
+
 Atoms worden verder nog door Elixir heen gebruikt voor andere waarden of plekken, maar die zijn momenteel niet relevant.
 
 ## Challenge-03
